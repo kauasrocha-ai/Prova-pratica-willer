@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Agendamentos</title></head>
+<body>
+
+<h1>Agendamentos</h1>
+<a href="/index.html">Voltar</a>
+
+<p>
+<input id="aid" placeholder="ID">
+<input id="acliente_id" type="number" placeholder="ID do cliente">
+<input id="aservico_id" type="number" placeholder="ID do serviço">
+<input id="adata_hora" type="datetime-local">
+</p>
+
+<button onclick="chamado('GET')">Listar</button>
+<button onclick="chamado('POST')">Agendar</button>
+<button onclick="chamado('PUT')">Editar</button>
+<button onclick="chamado('DELETE')">Excluir</button>
+
+<pre id="resultado"></pre>
+
+<script src="/js/funcoes.js"></script>
+<script src="/js/registro-chamado.js"></script>
+<script>verificar();</script>
+</body>
+</html>
+
